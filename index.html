@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- <script>
+    function enviar_formulario() {
+        document.contacto.submit()
+    }
+</script> -->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- SEO Meta Tags -->
+    <meta name="Description" content="Sistema de medición de temperatura corporal sin contacto para control de acceso">
+    <meta name="author" content="Creado por Inoavtik y adaptado por Infiniem">
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
+    <meta property="og:site_name" content="Medtemp" /> <!-- website name -->
+    <meta property="og:site" content="" /> <!-- website link -->
+    <meta property="og:title" content="Medtemp" /> <!-- title shown in the actual shared post -->
+    <meta property="og:description"
+        content="Sistema de medición de temperatura corporal sin contacto para control de acceso" />
+    <!-- description shown in the actual shared post -->
+    <meta property="og:image" content="images/MedTemp_logo1.svg" /> <!-- image link, make sure it's jpg -->
+    <meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+    <meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
+
+    <!-- Webpage Title -->
+    <title>MedTemp</title>
+
+    <!-- Styles -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@600&display=swap"
+        rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/fontawesome-all.min.css" rel="stylesheet">
+    <link href="css/swiper.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+    <!-- Favicon  -->
+    <link rel="icon" href="images/MT.svg">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-dark" aria-label="Main navigation">
+        <div class="container">
+
+            <!-- Image Logo -->
+            <a class="navbar-brand logo-image" href="index.html" style=" margin-left: 1.8rem;""><img src="
+                images/MedTemp_logo1.svg" alt="alternative"></a>
+
+            <!-- Text Logo - Use this if you don't have a graphic logo -->
+            <!-- <a class="navbar-brand logo-text" href="index.html">Elma</a> -->
+
+            <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav ms-auto navbar-nav-scroll">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#header">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#intro">¿Qué es?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#func">Funcionamiento</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Producto">Especificaciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://medtemp.fie.undef.edu.ar:3000/"
+                            target="_blank">Visualización</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contacto</a>
+                    </li>
+                </ul>
+                <span class="nav-item social-icons" style=" margin-left: 2.4rem;
+                margin-right: 1.8rem">
+                    <span class="fa-stack">
+                        <a href="https://www.facebook.com/InfiniemLab" target="_blank">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-facebook-f fa-stack-1x"></i>
+                        </a>
+                    </span>
+                    <span class="fa-stack">
+                        <a href="https://www.instagram.com/infiniemlabs/?r=nametag" target="_blank">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-instagram fa-stack-1x"></i>
+                        </a>
+                    </span>
+                    <span class="fa-stack">
+                        <a href="https://www.youtube.com/channel/UCF0-fTiSa0As_i82nxdmj8Q" target="_blank">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-youtube fa-stack-1x"></i>
+                        </a>
+                    </span>
+                </span>
+            </div> <!-- end of navbar-collapse -->
+        </div> <!-- end of container -->
+    </nav> <!-- end of navbar -->
+    <!-- end of navigation -->
+
+
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1 class="h1-large"> MedTemp</h1>
+                    <h1 class='h1-2'> Medición de temperatura corporal sin contacto</h1>
+                </div> <!-- end of col -->
+                <div class="col-lg-6">
+                    <div class="button-container" style="margin-top: 2.5rem">
+                        <a class="btn-solid-lg page-scroll" href="#intro">Conocé más</a>
+                        <a class="btn-outline-lg" href="https://forms.gle/iW4yPhfh1KcmQKfZ7" target="_blank">Registre
+                            su
+                            MedTemp</a>
+                    </div> <!-- end of button-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </header> <!-- end of header -->
+    <!-- end of header -->
+
+    <div class="row" style="padding-top: 6rem; padding-bottom: 6rem;">
+        <div class="col-lg-4 col-xl-4">
+            <div class="image-container" style="text-align: center; padding-top: 2rem; padding-bottom: 2rem;">
+                <a href="https://www.infiniemlabs.com.ar/" target="_blank"><img class="img-fluid"
+                        src="images/logo_infiniem.png" alt="alternative" width="100" height="100"></a>
+            </div> <!-- end of image-container -->
+        </div> <!-- end of col -->
+        <div class="col-lg-4 col-xl-4">
+            <div class="image-container" style="text-align: center; padding-top: 2rem; padding-bottom: 2rem;">
+                <a href="https://www.fie.undef.edu.ar/" target="_blank"><img class="img-fluid"
+                        src="images/Logo - FIE.png" alt="alternative" width="100" height="300"></a>
+            </div>
+        </div>
+        <div class="col-lg-4 col-xl-4" style="text-align: center; padding-top: 2rem;">
+            <div class="image-container" style="padding-top: 2rem; padding-bottom: 2rem;">
+                <a href="https://www.undef.edu.ar/" target="_blank"><img src="images/logoHeader.png" alt="alternative"
+                        width="250" height="42"></a>
+            </div>
+
+        </div> <!-- end of image-container -->
+    </div>
+    <!-- end of row 
+    <!-- Introduction -->
+    <div id="intro" class="basic-1 bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1 style="text-align: center;">¿Qué es?</h1>
+                </div> <!-- end of col -->
+                <div class="col-lg-6">
+                    <div class="text-container" style='text-align: justify;'>
+                        <p><strong>MedTemp</strong> es un sistema modular que permite medir la temperatura corporal
+                            humana, <strong>sin entrar en contacto físico</strong>, para controlar el acceso en espacios
+                            cerrados.</p>
+                        <p>Dicho dispositivo tiene como principal aplicación la de <strong>prevenir la propagación del
+                                virus SARS-CoV-2</strong>, en espacios públicos.
+                        </p>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-1 -->
+    <!-- end of introduction -->
+
+
+    <!-- Project 1 -->
+    <div id="func" class="basic-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-xl-5">
+                    <div class="text-container">
+                        <h2 style="text-align: center;">Control de acceso sin necesidad de personal</h2>
+                        <p><strong>MedTemp</strong> permite controlar el acceso a varios espacios simultaneamente, sin
+                            necesidad de una persona presente en cada punto, gracias a su sistema de control
+                            centralizado, una sola persona puede monitorear los ingresos desde una computadora. </p>
+
+                        <p>Es muy simple de usar: La persona que ingresa al establecimiento debe acercar la mano al
+                            <strong>MedTemp</strong>, la
+                            pantalla le indicará si la distancia de la mano es correcta. Una vez que la distancia de la
+                            mano sea la adecuada esperar unos segundos hasta que la pantalla muestre la temperatura.
+                        </p>
+                        <a class="read-more no-line green" href="Dowloads/Poster - Medtemp.jpg" download>Cómo usarlo
+                            <span class="fas fa-long-arrow-alt-right"></span></a>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-6 col-xl-7">
+                    <div class="image-container">
+                        <img class="img-fluid" src="images/acceso.jpeg" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-2 -->
+    <!-- end of project 1 -->
+
+
+    <!-- Project 2 -->
+    <div class="basic-3 bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-xl-6">
+                    <div class="image-container">
+                        <img class="img-fluid" src="images/grafana.png" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-6 col-xl-6">
+                    <div class="text-container">
+                        <h2 style="text-align: center;">Un panel de control para todas sus entradas</h2>
+                        <p><strong>MedTemp</strong> permite monitorear todos los ingresos desde un solo lugar, además
+                            guarda la información de cada ingreso, permitiendo tener un registro de los mismos</p>
+                        <a class="btn-solid-reg" data-bs-toggle="Acceder a la visualización"
+                            href="http://medtemp.fie.undef.edu.ar:3000/" target="_blank" style="
+                            margin-bottom: 10px;">Acceder a la visualización</a>
+                        <a class="btn-outline-reg" href="Dowloads/Manual de usuario - Medtemp.pdf" download>Manual de
+                            usuario</a>
+
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-3 -->
+    <!-- end of project 2 -->
+
+
+    <!-- Services -->
+    <div id="Producto" class="cards-1 bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="h2-heading">Las especificaciones de nuestro producto</h2>
+                    <p class="p-heading"> </p>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <!-- Card -->
+                    <div class="card first">
+                        <div class="card-icon" style='text-align: center;'>
+                            <span class="fas fa-people-arrows green" style='text-align: center;'></span>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Seguridad</h4>
+                            <div class="card-text"><strong>MedTemp</strong> permite que las personas se encuentren a
+                                una distancia
+                                segura entre sí y evita el contacto físico con el dispositivo.</div>
+                        </div>
+                    </div>
+                    <!-- end of card -->
+
+                    <!-- Card -->
+                    <div class="card second">
+                        <div class="card-icon">
+                            <span class="fas fa-chart-area green"></span>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Visualización</h4>
+                            <div class="card-text"><strong>MedTemp</strong> forma parte de una infraestructura de
+                                sensores, controladas por un nodo, que almacena y permite visualizar métricas</div>
+                        </div>
+                    </div>
+                    <!-- end of card -->
+
+                    <!-- Card -->
+                    <div class="card third">
+                        <div class="card-icon">
+                            <span class="fas fa-server green"></span>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Modularidad</h4>
+                            <div class="card-text"><strong>MedTemp</strong> se integra fácilmente con otros módulos que
+                                admitan el protocolo de conexión.</div>
+                        </div>
+                    </div>
+                    <!-- end of card -->
+
+                    <!-- Card -->
+                    <div class="card first">
+                        <div class="card-icon">
+                            <span class="fas fa-network-wired blue"></span>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Escalabilidad</h4>
+                            <div class="card-text">El proyecto está pensado para integrar varios sensores
+                                <strong>MedTemp</strong>, en
+                                varios puntos de acceso, gracias al protocolo aplicado, inspirando en
+                                <strong>IoT</strong>.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of card -->
+
+                    <!-- Card -->
+                    <div class="card second">
+                        <div class="card-icon">
+                            <span class="fas fa-universal-access"></span>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Facilidad de uso</h4>
+                            <div class="card-text"><strong>MedTemp</strong> es muy fácil de utilizar, lo que permite que
+                                con un banner sea suficiente para que alguien que nunca haya usado el producto lo use
+                                correctamente.</div>
+                        </div>
+                    </div>
+
+                    <!-- Card -->
+                    <div class="card third">
+                        <div class="card-icon">
+                            <span class="fas fa-virus-slash green"></span>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Autonomía</h4>
+                            <div class="card-text">El diseño de <strong>MedTemp</strong> fue pensado para que no
+                                requiera de una persona que se encuentre operándolo, lo que minimiza el contacto entre
+                                personas y el riesgo de propagación del virus.</div>
+                        </div>
+                    </div>
+                    <!-- end of card -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of cards-1 -->
+    <!-- end of services -->
+    <div id="specs" class="basic-2">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-6 col-xl-6">
+                    <div class="container">
+                        <h2>Especificaciones Técnicas</h2>
+                        <ul>
+                            <li>Sin instalación: el equipo no requiere personal especializado para su instalación y es
+                                de muy bajo mantenimiento.</li>
+                            <li>Tensión de alimentación: 5 V 500 mA - USB Tipo B</li>
+                            <li>Exactitud de medición* : +/- 0.5 °C</li>
+                            <li>Distancia de medición: 3 cm</li>
+                            <li>Rango de medición: 32 a 42 °C</li>
+                            <li>Tiempo de medición: 1 s</li>
+                            <li>Cantidad de adquisiciones por medición: 20 mediciones (promediadas)</li>
+                            <li>Resolución: 0.1 °C</li>
+                            <li>Corrección de sesgo instrumental: fijo o variable</li>
+                            <li>Conectividad: WiFi</li>
+                            <li>Pantalla: Oled de gran visibilidad.</li>
+                            <li>Indicadores: sonoro y visual</li>
+                            <li>Melodía de bienvenida/aceptación/rechazo: configurable</li>
+                            <li>Modos de funcionamiento: local/acceso remoto</li>
+                            <li>Acceso con dispositivos: smartphone/tablets/notebooks/PC</li>
+                            <li>Estadísticas de registros de ingreso: Por hora/dia/semana/mes</li>
+                            <li>Escalabilidad del sistema: alta/por módulos</li>
+                        </ul>
+
+                        <h2 style='font-size: 10px; line-height:130%'>(*) De ninguna manera
+                            MedTemp reemplazaría a un
+                            termómetro clínico.
+                            La
+                            exactitud
+                            del sistema es de 0.5 °C, con lo cual recomendamos validar las mediciones en torno a los
+                            37.5 +/- 0.5 °C</h2>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-6">
+                    <div class="image-container">
+                        <img class="img-fluid" src="images/handtemp_v1_despiece.png" alt="alternative">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <div class="basic-2" style="padding-top: 0rem;
+    padding-bottom: 0rem">
+        <!-- Contact -->
+        <div id="contact" class="form-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2 class="h2-heading">Contáctese con nosotros</h2>
+                        <!-- <p class="p-heading"></p>
+                    <ul class="list-unstyled li-space-lg">
+                        <li><i class="fas fa-map-marker-alt"></i> &nbsp;22 Innovative, San Francisco, CA 94043, US</li>
+                        <li><i class="fas fa-phone"></i> &nbsp;<a href="tel:00817202212">+81 720 2212</a></li>
+                        <li><i class="fas fa-envelope"></i> &nbsp;<a href="mailto:contact@site.com">contact@site.com</a>
+                        </li>
+                    </ul> -->
+                    </div> <!-- end of col -->
+                </div>
+                <a class="btn-solid-reg" href="https://infiniemlabs.com.ar/index.php?variable=#contacto" target='_blank'
+                    download>Contacto</a>
+
+            </div>
+        </div>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="footer-col first">
+                            <h6>Sobre MedTemp</h6>
+                            <p class="p-small" style="text-align: justify;">MedTemp es un sistema modular que permite
+                                medir la temperatura corporal
+                                humana, sin entrar en contacto físico, para controlar el acceso en espacios cerrados.
+                            </p>
+                        </div> <!-- end of footer-col -->
+                        <div class="footer-col second">
+                            <h6>Links</h6>
+                            <ul class="list-unstyled li-space-lg p-small">
+                                <li><b>Menu:</b> <a class="page-scroll" href="#header"
+                                        style="color: #37BAEC;"><u>Home</u></a>, <a class=" page-scroll" href="#intro"
+                                        style="color: #37BAEC;"><u>¿Qué es?</u></a>, <a class="page-scroll"
+                                        href="#Producto" style="color: #37BAEC;"><u>Nuestro
+                                            Producto</u></a>,
+                                    <a class="page-scroll" href="#contact" style="color: #37BAEC;"><u>Contacto</u></a>
+                                    <a class="page-scroll" href="http://medtemp.fie.undef.edu.ar:3000/"
+                                        style="color: #37BAEC;"><u>Visualización</u></a>
+                                </li>
+                            </ul>
+                            <ul class="list-unstyled li-space-lg p-small">
+                                <li><b>Redes Sociales: </b><a href="https://www.facebook.com/InfiniemLab"
+                                        target="_blank" style="color: #37BAEC;"><u>Facebook</u></a>, <a
+                                        href="https://www.instagram.com/infiniemlabs/?r=nametag" target="_blank"
+                                        style="color: #37BAEC;"><u>Instagram</u></a>, <a
+                                        href="https://www.youtube.com/channel/UCF0-fTiSa0As_i82nxdmj8Q" target="_blank"
+                                        style="color: #37BAEC;"><u>Youtube</u></a>
+                                </li>
+                                <a href="https://www.undef.edu.ar/" target="_blank"
+                                    style="color: #37BAEC; text-align: center;"><u>UNDEF</u></a><br>
+                                <a href="https://www.fie.undef.edu.ar/" target="_blank"
+                                    style="color: #37BAEC;"><u>FIE</u></a><br>
+                                <a href="https://www.infiniemlabs.com.ar/" target="_blank"
+                                    style="color: #37BAEC;"><u>InfiniemLabs</u></a>
+                            </ul>
+                        </div> <!-- end of footer-col -->
+                        <div class="footer-col third">
+                            <span class="fa-stack">
+                                <a href="https://www.facebook.com/InfiniemLab" target="_blank">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-facebook-f fa-stack-1x"></i>
+                                </a>
+                            </span>
+                            <span class="fa-stack">
+
+                                <span class="fa-stack">
+                                    <a href="https://www.instagram.com/infiniemlabs/?r=nametag" target="_blank">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-instagram fa-stack-1x"></i>
+                                    </a>
+                                </span>
+                            </span>
+                            <span class="fa-stack">
+
+                                <span class="fa-stack">
+                                    <a href="https://www.youtube.com/channel/UCF0-fTiSa0As_i82nxdmj8Q" target="_blank">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-youtube fa-stack-1x"></i>
+                                    </a>
+                                </span>
+                            </span>
+                            <p class="p-small">Nos gustaría escuchar lo que tenés para decir
+                                <a><strong>infiniem.labs@gmail.com</strong></a>
+                            </p>
+                        </div> <!-- end of footer-col -->
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of footer -->
+        <!-- end of footer -->
+
+
+        <!-- Copyright -->
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p class="p-small"><a>Copyright © Landing page template por </a><a href='https://inovatik.com/'
+                                target="_blank">Inovatik</a> - adaptado por Infiniem Labs 2021. Todos los derechos
+                            reservados</p>
+                    </div> <!-- end of col -->
+                </div> <!-- enf of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of copyright -->
+        <!-- end of copyright -->
+
+
+        <!-- Back To Top Button -->
+        <button onclick="topFunction()" id="myBtn">
+            <img src="images/up-arrow.png" alt="alternative">
+        </button>
+        <!-- end of back to top button -->
+
+        <!-- Scripts -->
+        <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+        <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+        <script src="js/purecounter.min.js"></script> <!-- Purecounter counter for statistics numbers -->
+        <script src="js/scripts.js"></script> <!-- Custom scripts -->
+        <script>
+            //update this with your js_form selector
+            var form_id_js = "contacto";
+
+            var data_js = {};
+
+            var sendButton = document.getElementById("js_send");
+
+            function js_onSuccess() {
+                // remove this to avoid redirect
+                // window.location = window.location.pathname + "?message=Email+Successfully+Sent%21&isError=0";
+                sendButton.value = 'Enviar';
+                sendButton.disabled = false;
+                alert('mensaje enviado ok');
+            }
+
+            function js_onError(error) {
+                // remove this to avoid redirect
+                // window.location = window.location.pathname + "?message=Email+could+not+be+sent.&isError=1";
+                sendButton.value = 'Enviar';
+                sendButton.disabled = false;
+                alert('mensaje no enviado');
+            }
+
+
+
+            function js_send() {
+
+
+
+                var formulario = document.getElementById('contacto')
+                if (formulario.checkValidity()) {
+                    console.log('sucess');
+                } else {
+                    //Validate Form
+                    formulario.reportValidity()
+                    return
+                }
+                // formulario.submit()
+                sendButton.value = 'Sending…';
+                sendButton.disabled = true;
+                var request = new XMLHttpRequest();
+                request.onreadystatechange = function () {
+                    if (request.readyState == 4 && request.status == 200) {
+                        js_onSuccess();
+                    } else
+                        if (request.readyState == 4) {
+                            js_onError(request.response);
+                        }
+                };
+
+                var subject = document.querySelector("#" + form_id_js + " [name='nombre']").value;
+                var message = document.querySelector("#" + form_id_js + " [name='mensaje']").value;
+                var email = document.querySelector("#" + form_id_js + " [name='email']").value;
+                data_js['nombre'] = subject;
+                data_js['mensaje'] = message;
+                data_js['email'] = email;
+                var params = toParams(data_js);
+
+                request.open("POST", "http://localhost:8000/Get_form", true);
+                request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+                request.send(params);
+
+                return false;
+            }
+
+            sendButton.onclick = js_send;
+
+            function toParams(data_js) {
+                var form_data = [];
+                for (var key in data_js) {
+                    form_data.push(encodeURIComponent(key) + "=" + encodeURIComponent(data_js[key]));
+                }
+
+                return form_data.join("&");
+            }
+
+            var js_form = document.getElementById(form_id_js);
+            js_form.addEventListener("submit", function (e) {
+                e.preventDefault();
+            });
+        </script>
+</body>
+
+</html>
