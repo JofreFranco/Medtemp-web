@@ -410,7 +410,9 @@ a:hover {
         opacity: 1;
 	}
 }
-
+.circular--square {
+	border-radius: 00%;
+  }
 .navbar .dropdown-menu {
 	margin-top: 0.25rem;
 	margin-bottom: 0.25rem;
@@ -1580,7 +1582,6 @@ a:hover {
 		margin-left: 3.375rem;
 	}
 	/* end of project 1 */
-
 
 	/* Project 2 */
 	.basic-3 .text-container {
